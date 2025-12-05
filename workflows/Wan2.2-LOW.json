@@ -560,55 +560,6 @@
       ]
     },
     {
-      "id": 6,
-      "type": "CLIPTextEncode",
-      "pos": [
-        -1081.4893798306803,
-        -174.86567471035616
-      ],
-      "size": [
-        422.84503173828125,
-        164.31304931640625
-      ],
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 74
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "slot_index": 0,
-          "links": [
-            127,
-            128
-          ]
-        }
-      ],
-      "title": "CLIP Text Encode (Positive Prompt)",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.75",
-        "Node name for S&R": "CLIPTextEncode",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.5.1",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "zwxem style painging of a city with amazing towers at night"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 7,
       "type": "CLIPTextEncode",
       "pos": [
@@ -1394,6 +1345,55 @@
       ],
       "ndSuperSelectorEnabled": false,
       "ndPowerEnabled": false
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -1081.4893798306803,
+        -174.86567471035616
+      ],
+      "size": [
+        422.84503173828125,
+        164.31304931640625
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 74
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "slot_index": 0,
+          "links": [
+            127,
+            128
+          ]
+        }
+      ],
+      "title": "CLIP Text Encode (Positive Prompt)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.75",
+        "Node name for S&R": "CLIPTextEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.5.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "zwxem style painting of a city with amazing towers at night"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
     }
   ],
   "links": [
@@ -1642,10 +1642,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.7088742511245865,
+      "scale": 1.2839025177495016,
       "offset": [
-        2328.778334310571,
-        -314.893721819074
+        2281.9044068801077,
+        240.1193102989065
       ]
     },
     "frontendVersion": "1.32.9",
