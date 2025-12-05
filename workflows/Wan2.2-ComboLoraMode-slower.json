@@ -566,7 +566,7 @@
       },
       "widgets_values": [
         "enable",
-        993119542552548,
+        519747813303369,
         "randomize",
         8,
         1,
@@ -634,7 +634,7 @@
       },
       "widgets_values": [
         "disable",
-        17230450333784,
+        778143423061334,
         "randomize",
         8,
         1,
@@ -882,7 +882,7 @@
       ],
       "size": [
         836.44890241247,
-        334
+        1164.44890241247
       ],
       "flags": {},
       "order": 28,
@@ -943,7 +943,15 @@
         "videopreview": {
           "hidden": false,
           "paused": false,
-          "params": {}
+          "params": {
+            "filename": "mp4_00004.mp4",
+            "subfolder": "",
+            "type": "output",
+            "format": "video/h264-mp4",
+            "frame_rate": 8,
+            "workflow": "mp4_00004.png",
+            "fullpath": "S:\\Auto\\ComfyUI_windows_portable\\ComfyUI\\output\\mp4_00004.mp4"
+          }
         }
       }
     },
@@ -1194,48 +1202,6 @@
       ]
     },
     {
-      "id": 91,
-      "type": "ShowText|pysssss",
-      "pos": [
-        -793.9000723820686,
-        556.0588406214807
-      ],
-      "size": [
-        253.14566331300148,
-        96.37108328003751
-      ],
-      "flags": {},
-      "order": 21,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 180
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "shape": 6,
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "title": "Where The Lora is Saved",
-      "properties": {
-        "cnr_id": "comfyui-custom-scripts",
-        "ver": "1.2.5",
-        "Node name for S&R": "ShowText|pysssss",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.5.1"
-        }
-      },
-      "widgets_values": []
-    },
-    {
       "id": 92,
       "type": "PrimitiveString",
       "pos": [
@@ -1275,6 +1241,50 @@
       ],
       "color": "#232",
       "bgcolor": "#353"
+    },
+    {
+      "id": 91,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -793.9000723820686,
+        556.0588406214807
+      ],
+      "size": [
+        253.14566331300148,
+        96.37108328003751
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 180
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "Where The Lora is Saved",
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.1"
+        }
+      },
+      "widgets_values": [
+        "S:\\Auto\\Aitoolkit\\ai-toolkit\\output\\My----Lora_20251205_191437\\My----Lora_20251205_191437_low_noise.safetensors"
+      ]
     },
     {
       "id": 69,
@@ -1332,7 +1342,7 @@
         }
       },
       "widgets_values": [
-        1.3
+        1
       ]
     },
     {
@@ -1425,8 +1435,8 @@
         "Wan 2.2 Combo",
         "S:\\Auto\\Aitoolkit\\ai-toolkit",
         "",
-        250,
-        0.0009,
+        500,
+        0.0006,
         16,
         "Low (768px)",
         true,
@@ -1682,10 +1692,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.2839025177495011,
+      "scale": 0.8769226950000043,
       "offset": [
-        2222.1803154371764,
-        -295.6004799478651
+        2592.2422822351,
+        216.72436901065666
       ]
     },
     "frontendVersion": "1.32.9",
