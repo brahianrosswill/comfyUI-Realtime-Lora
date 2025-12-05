@@ -55,6 +55,16 @@ Restart ComfyUI.
 
 **Apply Trained LoRA** - Applies the trained LoRA to your model
 
+## Getting Started
+
+There are example workflows included in the custom_nodes/comfyUI-Realtime-Lora folder. Open one in ComfyUI and:
+
+1. Paste the path to your sd-scripts or AI-Toolkit installation into the node
+2. For SDXL: select your checkpoint from the dropdown
+3. For AI-Toolkit models: the first run will download the model from HuggingFace automatically
+
+**First run with AI-Toolkit:** The model will download to your HuggingFace cache folder. On Windows this is typically `C:\Users\YourName\.cache\huggingface\hub`. You can watch that folder to monitor download progress - these models are large (several GB).
+
 ## Basic Usage
 
 1. Add the trainer node for your model type
