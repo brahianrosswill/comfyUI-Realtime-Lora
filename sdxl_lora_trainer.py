@@ -466,6 +466,8 @@ class SDXLLoraTrainer:
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
                 text=True,
+                encoding='utf-8',
+                errors='replace',
                 cwd=sd_scripts_path,
                 startupinfo=startupinfo,
             )

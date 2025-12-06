@@ -499,6 +499,8 @@ class RealtimeLoraTrainer:
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
                 text=True,
+                encoding='utf-8',
+                errors='replace',
                 bufsize=1,
                 startupinfo=startupinfo,
                 cwd=ai_toolkit_path
