@@ -1,8 +1,8 @@
 {
   "id": "a3f7c821-e459-4d8a-b612-9c8a3e1f5d42",
   "revision": 0,
-  "last_node_id": 84,
-  "last_link_id": 179,
+  "last_node_id": 85,
+  "last_link_id": 188,
   "nodes": [
     {
       "id": 9,
@@ -60,7 +60,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            172
+            181
           ]
         },
         {
@@ -104,7 +104,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            176
+            185
           ]
         },
         {
@@ -148,7 +148,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            178
+            187
           ]
         },
         {
@@ -192,7 +192,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            174
+            183
           ]
         },
         {
@@ -236,7 +236,7 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            173
+            182
           ]
         }
       ],
@@ -274,7 +274,7 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            175
+            184
           ]
         }
       ],
@@ -312,7 +312,7 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            177
+            186
           ]
         }
       ],
@@ -350,7 +350,7 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            179
+            188
           ]
         }
       ],
@@ -772,7 +772,7 @@
         {
           "name": "lora_path",
           "type": "STRING",
-          "link": 171
+          "link": 180
         }
       ],
       "outputs": [
@@ -888,101 +888,6 @@
       ]
     },
     {
-      "id": 84,
-      "type": "MusubiZImageBaseLoraTrainer",
-      "pos": [
-        -1030.5966211534846,
-        333.9271121883316
-      ],
-      "size": [
-        456.9615234375,
-        540
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image_1",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 172
-        },
-        {
-          "name": "caption_1",
-          "shape": 7,
-          "type": "STRING",
-          "link": 173
-        },
-        {
-          "name": "image_2",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 174
-        },
-        {
-          "name": "caption_2",
-          "shape": 7,
-          "type": "STRING",
-          "link": 175
-        },
-        {
-          "name": "image_3",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 176
-        },
-        {
-          "name": "caption_3",
-          "shape": 7,
-          "type": "STRING",
-          "link": 177
-        },
-        {
-          "name": "image_4",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 178
-        },
-        {
-          "name": "caption_4",
-          "shape": 7,
-          "type": "STRING",
-          "link": 179
-        }
-      ],
-      "outputs": [
-        {
-          "name": "lora_path",
-          "type": "STRING",
-          "links": [
-            171
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "ShootTheSound/comfyUI-Realtime-Lora",
-        "ver": "777077a51b2b575b3fe764145888ddafc2e966c0",
-        "Node name for S&R": "MusubiZImageBaseLoraTrainer"
-      },
-      "widgets_values": [
-        4,
-        "",
-        "S:\\Auto\\musubi-tuner",
-        "z_image_bf16.safetensors",
-        "ae-FLUX1.safetensors",
-        "qwen_3_4b.safetensors",
-        "photo of subject",
-        400,
-        0.0001,
-        32,
-        "Low (768px)",
-        true,
-        "MyLora",
-        ""
-      ]
-    },
-    {
       "id": 82,
       "type": "Note",
       "pos": [
@@ -1011,6 +916,101 @@
       ],
       "color": "#432",
       "bgcolor": "#653"
+    },
+    {
+      "id": 85,
+      "type": "MusubiZImageBaseLoraTrainer",
+      "pos": [
+        -1035.043383778244,
+        339.40079224445225
+      ],
+      "size": [
+        456.9615234375,
+        564
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 181
+        },
+        {
+          "name": "caption_1",
+          "shape": 7,
+          "type": "STRING",
+          "link": 182
+        },
+        {
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 183
+        },
+        {
+          "name": "caption_2",
+          "shape": 7,
+          "type": "STRING",
+          "link": 184
+        },
+        {
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 185
+        },
+        {
+          "name": "caption_3",
+          "shape": 7,
+          "type": "STRING",
+          "link": 186
+        },
+        {
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 187
+        },
+        {
+          "name": "caption_4",
+          "shape": 7,
+          "type": "STRING",
+          "link": 188
+        }
+      ],
+      "outputs": [
+        {
+          "name": "lora_path",
+          "type": "STRING",
+          "links": [
+            180
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "ShootTheSound/comfyUI-Realtime-Lora",
+        "ver": "777077a51b2b575b3fe764145888ddafc2e966c0"
+      },
+      "widgets_values": [
+        4,
+        null,
+        "",
+        "S:\\Auto\\musubi-tuner",
+        "z_image_bf16.safetensors",
+        "ae-FLUX1.safetensors",
+        "qwen_3_4b.safetensors",
+        "photo of subject",
+        400,
+        0.0001,
+        32,
+        "Low (768px)",
+        true,
+        "MyLora",
+        ""
+      ]
     }
   ],
   "links": [
@@ -1111,74 +1111,74 @@
       "STRING"
     ],
     [
-      171,
-      84,
+      180,
+      85,
       0,
       71,
       1,
       "STRING"
     ],
     [
-      172,
+      181,
       29,
       0,
-      84,
+      85,
       0,
       "IMAGE"
     ],
     [
-      173,
+      182,
       59,
       0,
-      84,
+      85,
       1,
       "STRING"
     ],
     [
-      174,
+      183,
       30,
       0,
-      84,
+      85,
       2,
       "IMAGE"
     ],
     [
-      175,
+      184,
       61,
       0,
-      84,
+      85,
       3,
       "STRING"
     ],
     [
-      176,
+      185,
       32,
       0,
-      84,
+      85,
       4,
       "IMAGE"
     ],
     [
-      177,
+      186,
       60,
       0,
-      84,
+      85,
       5,
       "STRING"
     ],
     [
-      178,
+      187,
       31,
       0,
-      84,
+      85,
       6,
       "IMAGE"
     ],
     [
-      179,
+      188,
       62,
       0,
-      84,
+      85,
       7,
       "STRING"
     ]
@@ -1187,10 +1187,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7972024500000033,
+      "scale": 0.6588450000000006,
       "offset": [
-        2324.977651593336,
-        711.5581012807161
+        3216.4251584850945,
+        900.3603086217425
       ]
     },
     "frontendVersion": "1.36.14",

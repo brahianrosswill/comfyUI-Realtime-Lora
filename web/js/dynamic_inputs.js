@@ -5,7 +5,7 @@ app.registerExtension({
     name: "RealtimeLoraTrainer.DynamicInputs",
     async beforeRegisterNodeDef(nodeType, nodeData, app) {
         // Apply to trainer nodes only
-        if (!["RealtimeLoraTrainer", "SDXLLoraTrainer", "SD15LoraTrainer", "MusubiZImageLoraTrainer", "MusubiQwenImageLoraTrainer", "MusubiWanLoraTrainer"].includes(nodeData.name)) {
+        if (!["RealtimeLoraTrainer", "SDXLLoraTrainer", "SD15LoraTrainer", "MusubiZImageLoraTrainer", "MusubiZImageBaseLoraTrainer", "MusubiFluxKleinLoraTrainer", "MusubiQwenImageLoraTrainer", "MusubiWanLoraTrainer"].includes(nodeData.name)) {
             return;
         }
 

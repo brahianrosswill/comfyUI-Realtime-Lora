@@ -1,8 +1,8 @@
 {
   "id": "b5e8d934-f672-4a9c-c723-ae9b4f2g6e53",
   "revision": 0,
-  "last_node_id": 86,
-  "last_link_id": 183,
+  "last_node_id": 87,
+  "last_link_id": 192,
   "nodes": [
     {
       "id": 29,
@@ -24,7 +24,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            171
+            184
           ]
         },
         {
@@ -68,7 +68,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            175
+            188
           ]
         },
         {
@@ -112,7 +112,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            177
+            190
           ]
         },
         {
@@ -156,7 +156,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            173
+            186
           ]
         },
         {
@@ -200,7 +200,7 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            172
+            185
           ]
         }
       ],
@@ -238,7 +238,7 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            174
+            187
           ]
         }
       ],
@@ -276,7 +276,7 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            176
+            189
           ]
         }
       ],
@@ -314,7 +314,7 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            178
+            191
           ]
         }
       ],
@@ -541,7 +541,7 @@
         {
           "name": "lora_path",
           "type": "STRING",
-          "link": 179
+          "link": 192
         }
       ],
       "outputs": [
@@ -778,103 +778,6 @@
       ]
     },
     {
-      "id": 84,
-      "type": "MusubiFluxKleinLoraTrainer",
-      "pos": [
-        -995.4876934357806,
-        334.3073519934053
-      ],
-      "size": [
-        437.8345703125,
-        588
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image_1",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 171
-        },
-        {
-          "name": "caption_1",
-          "shape": 7,
-          "type": "STRING",
-          "link": 172
-        },
-        {
-          "name": "image_2",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 173
-        },
-        {
-          "name": "caption_2",
-          "shape": 7,
-          "type": "STRING",
-          "link": 174
-        },
-        {
-          "name": "image_3",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 175
-        },
-        {
-          "name": "caption_3",
-          "shape": 7,
-          "type": "STRING",
-          "link": 176
-        },
-        {
-          "name": "image_4",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 177
-        },
-        {
-          "name": "caption_4",
-          "shape": 7,
-          "type": "STRING",
-          "link": 178
-        }
-      ],
-      "outputs": [
-        {
-          "name": "lora_path",
-          "type": "STRING",
-          "links": [
-            179
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "ShootTheSound/comfyUI-Realtime-Lora",
-        "ver": "777077a51b2b575b3fe764145888ddafc2e966c0",
-        "Node name for S&R": "MusubiFluxKleinLoraTrainer"
-      },
-      "widgets_values": [
-        "Klein Base 9B",
-        4,
-        "",
-        "S:\\Auto\\musubi-tuner",
-        "flux-2-klein-base-9b.safetensors",
-        "ae.safetensors",
-        "qwen_3_8b.safetensors",
-        "",
-        400,
-        0.0001,
-        32,
-        0,
-        "Low (768px)",
-        true,
-        "MyLora",
-        ""
-      ]
-    },
-    {
       "id": 77,
       "type": "UNETLoader",
       "pos": [
@@ -978,6 +881,103 @@
       ],
       "color": "#432",
       "bgcolor": "#653"
+    },
+    {
+      "id": 87,
+      "type": "MusubiFluxKleinLoraTrainer",
+      "pos": [
+        -994.6739396581672,
+        368.3054447925577
+      ],
+      "size": [
+        437.8345703125,
+        612
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 184
+        },
+        {
+          "name": "caption_1",
+          "shape": 7,
+          "type": "STRING",
+          "link": 185
+        },
+        {
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 186
+        },
+        {
+          "name": "caption_2",
+          "shape": 7,
+          "type": "STRING",
+          "link": 187
+        },
+        {
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 188
+        },
+        {
+          "name": "caption_3",
+          "shape": 7,
+          "type": "STRING",
+          "link": 189
+        },
+        {
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 190
+        },
+        {
+          "name": "caption_4",
+          "shape": 7,
+          "type": "STRING",
+          "link": 191
+        }
+      ],
+      "outputs": [
+        {
+          "name": "lora_path",
+          "type": "STRING",
+          "links": [
+            192
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "ShootTheSound/comfyUI-Realtime-Lora",
+        "ver": "777077a51b2b575b3fe764145888ddafc2e966c0"
+      },
+      "widgets_values": [
+        "Klein Base 9B",
+        4,
+        null,
+        "",
+        "S:\\Auto\\musubi-tuner",
+        "flux-2-klein-base-9b.safetensors",
+        "ae.safetensors",
+        "qwen_3_8b.safetensors",
+        "",
+        400,
+        0.0001,
+        32,
+        0,
+        "Low (768px)",
+        true,
+        "MyLora",
+        ""
+      ]
     }
   ],
   "links": [
@@ -1038,78 +1038,6 @@
       "STRING"
     ],
     [
-      171,
-      29,
-      0,
-      84,
-      0,
-      "IMAGE"
-    ],
-    [
-      172,
-      59,
-      0,
-      84,
-      1,
-      "STRING"
-    ],
-    [
-      173,
-      30,
-      0,
-      84,
-      2,
-      "IMAGE"
-    ],
-    [
-      174,
-      61,
-      0,
-      84,
-      3,
-      "STRING"
-    ],
-    [
-      175,
-      32,
-      0,
-      84,
-      4,
-      "IMAGE"
-    ],
-    [
-      176,
-      60,
-      0,
-      84,
-      5,
-      "STRING"
-    ],
-    [
-      177,
-      31,
-      0,
-      84,
-      6,
-      "IMAGE"
-    ],
-    [
-      178,
-      62,
-      0,
-      84,
-      7,
-      "STRING"
-    ],
-    [
-      179,
-      84,
-      0,
-      71,
-      1,
-      "STRING"
-    ],
-    [
       180,
       85,
       0,
@@ -1140,16 +1068,88 @@
       68,
       0,
       "MODEL"
+    ],
+    [
+      184,
+      29,
+      0,
+      87,
+      0,
+      "IMAGE"
+    ],
+    [
+      185,
+      59,
+      0,
+      87,
+      1,
+      "STRING"
+    ],
+    [
+      186,
+      30,
+      0,
+      87,
+      2,
+      "IMAGE"
+    ],
+    [
+      187,
+      61,
+      0,
+      87,
+      3,
+      "STRING"
+    ],
+    [
+      188,
+      32,
+      0,
+      87,
+      4,
+      "IMAGE"
+    ],
+    [
+      189,
+      60,
+      0,
+      87,
+      5,
+      "STRING"
+    ],
+    [
+      190,
+      31,
+      0,
+      87,
+      6,
+      "IMAGE"
+    ],
+    [
+      191,
+      62,
+      0,
+      87,
+      7,
+      "STRING"
+    ],
+    [
+      192,
+      87,
+      0,
+      71,
+      1,
+      "STRING"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.5535220464768966,
+      "scale": 0.7247295000000004,
       "offset": [
-        1046.2347521142106,
-        -258.53773665575693
+        2875.159963030123,
+        617.6604821369383
       ]
     },
     "frontendVersion": "1.36.14",

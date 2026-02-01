@@ -6,7 +6,8 @@
       "WebFetch(domain:github.com)",
       "Bash(python:*)",
       "Bash(grep:*)",
-      "Bash(findstr:*)"
+      "Bash(findstr:*)",
+      "Bash(find:*)"
     ]
   }
 }
