@@ -17,7 +17,7 @@
 | **Musubi Tuner** | Z-Image, Z-Image Base, FLUX Klein 4B/9B, Qwen Image, Qwen Image Edit, Wan 2.2 | Cutting-edge models, smaller LoRAs, excellent VRAM efficiency |
 | **AI-Toolkit** | FLUX.1-dev, Z-Image, Wan 2.2 alternative training pipeline |
 
-**8 architectures. 3 training backends. 34 nodes total.**
+**8 architectures. 3 training backends. 34 nodes total. **
 
 - 10 trainer nodes
 - 13 selective loaders (5 V1 + 8 V2 combined)
