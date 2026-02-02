@@ -275,9 +275,13 @@ def _detect_architecture_from_keys(keys: list) -> str:
     Uses patterns from lora_analyzer_v2.py.
     """
     keys_lower = [k.lower() for k in keys]
-    keys_str = ' '.join(keys_lower)
 
-    # Z-Image: diffusion_model.layers.N.attention
+    # Qwen-Image: transformer_blocks.N with img_mlp/txt_mlp/img_mod/txt_mod
+    # Must check BEFORE FLUX since both have transformer_blocks
+    if any('transformer_blocks' in k and any(x in k for x in ['img_mlp', 'txt_mlp', 'img_mod', 'txt_mod']) for k in keys_lower):
+        return 'QWEN_IMAGE'
+
+    # Z-Image: layers.N.attention (without FLUX-style blocks)
     if any('layers.' in k and ('attention' in k or 'adaln' in k) for k in keys_lower):
         # Check if it's FLUX-style (has transformer blocks) or Z-Image style
         if any('single_transformer_blocks' in k or 'double_blocks' in k for k in keys_lower):
@@ -310,8 +314,8 @@ def _detect_architecture_from_keys(keys: list) -> str:
         else:
             return 'ZIMAGE'
 
-    # FLUX patterns
-    if any('double_blocks' in k or 'single_blocks' in k or 'transformer_blocks' in k for k in keys_lower):
+    # FLUX patterns: double_blocks/single_blocks
+    if any('double_blocks' in k or 'single_blocks' in k for k in keys_lower):
         # Count blocks
         double_blocks = set()
         single_blocks = set()
@@ -339,10 +343,6 @@ def _detect_architecture_from_keys(keys: list) -> str:
     # Wan: blocks.N with self_attn/cross_attn/ffn
     if any(('blocks.' in k or 'blocks_' in k) and any(x in k for x in ['self_attn', 'cross_attn', 'ffn']) for k in keys_lower):
         return 'WAN'
-
-    # Qwen: transformer_blocks.N with img_mlp/txt_mlp
-    if any('transformer_blocks' in k and any(x in k for x in ['img_mlp', 'txt_mlp', 'img_mod', 'txt_mod']) for k in keys_lower):
-        return 'QWEN_IMAGE'
 
     # SDXL/SD15: check for UNet patterns
     if any('input_blocks' in k or 'output_blocks' in k or 'middle_block' in k for k in keys_lower):
